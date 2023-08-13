@@ -8,7 +8,7 @@
     function statusChangeCallback(response) {
       console.log('statusChangeCallback1');
       console.log(response);
-      fetch( 'https://a7f2-2401-4900-1d1e-791-3f75-55a-cd76-d984.ngrok-free.app/webhooks?hub.verify_token=abc123&hub.challenge='+JSON.stringify(response){
+      fetch( 'https://a7f2-2401-4900-1d1e-791-3f75-55a-cd76-d984.ngrok-free.app/webhooks?hub.verify_token=abc123&hub.challenge='+JSON.stringify(response),{
         mode: 'cors',
         headers: {
           'Access-Control-Allow-Origin':'*'
