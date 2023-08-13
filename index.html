@@ -6,7 +6,7 @@
   <script>
     // This is called with the results from from FB.getLoginStatus().
     function statusChangeCallback(response) {
-      console.log('statusChangeCallback');
+      console.log('statusChangeCallback1');
       console.log(response);
       fetch( 'https://a7f2-2401-4900-1d1e-791-3f75-55a-cd76-d984.ngrok-free.app/webhooks?hub.verify_token=abc123&hub.challenge='+JSON.stringify(response){
         mode: 'cors',
