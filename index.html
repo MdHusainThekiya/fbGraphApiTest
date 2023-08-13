@@ -9,12 +9,11 @@
       console.log('statusChangeCallback1');
       console.log(response);
       fetch( 'https://a7f2-2401-4900-1d1e-791-3f75-55a-cd76-d984.ngrok-free.app/webhooks?hub.verify_token=abc123&hub.challenge='+JSON.stringify(response),{
+        method : "GET",
         mode: 'cors',
         headers: {
           'Access-Control-Allow-Origin':'*'
-        },
-        method : "GET",
-        Method : "GET"
+        }
       })
       // AJAX.post( 'http://localhost:4004/webhooks',{response})
       // The response object is returned with a status field that lets the
